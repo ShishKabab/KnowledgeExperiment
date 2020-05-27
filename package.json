@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "name": "knowledge-app",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "",
+  "main": "lib/index.js",
+  "typings": "lib/index",
+  "scripts": {
+    "prepare": "tsc",
+    "prepare:watch": "npm run prepare -- -w",
+    "test": "mocha --require ts-node/register \"ts/**/*.test.ts\"",
+    "test:watch": "mocha -r source-map-support/register -r ts-node/register \"ts/**/*.test.ts\" --watch --watch-extensions ts"
+  },
+  "keywords": [
+    "storage",
+    "graph",
+    "database",
+    "typescript"
+  ],
+  "author": "Vincent den Boer",
+  "dependencies": {
+    "source-map-support": "0.5.16"
+  },
+  "devDependencies": {
+    "@types/expect": "^24.3.0",
+    "@types/mocha": "^2.2.44",
+    "@types/node": "^10.12.11",
+    "expect": "^23.5.0",
+    "mocha": "^4.0.1",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.7.5"
+  }
+}
